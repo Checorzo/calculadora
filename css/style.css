@@ -1,0 +1,26 @@
+.calculadora-container{
+  display: grid;
+  justify-items: center;
+}
+.result input{
+  display: block; 
+}
+
+.buttons-container{
+   display:grid;
+   width: 300px;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.buttons-container button{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+.buttons-container .mas-menos{
+  font-size: 20px;
+}
+.buttons-container .menos{
+  font-size: 20px;
+}
+
