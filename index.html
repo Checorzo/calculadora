@@ -8,36 +8,32 @@
   <title>Calculadora</title>
   <link rel="stylesheet" href="./css/style.css">
 </head
-<body>
- <h1>CalculApp</h1>
+<body >
+ <h1>CalculApp</h1> 
  <div class="calculadora-container">
    <div class="result">
-     <input type="text" class="result--eperation-view" placeholder="type">
-     <input type="text" class="result--resutl-iew">
+      <input type="text" id="operation" name="operation" class="result--operation-view" placeholder="0"></input>
+     <input class="result--resutl-view" id='result' placeholder='Resultado'></input>
    </div>
-   <div class="buttons-container"> 
-     <button>C</button>
-     <button>()</button>
-     <button>%</button>
-     <button>÷</button>
-     <button>7</button>
-     <button>8</button>
-     <button>9</button>
-     <button>x</button>
-     <button>4</button>
-     <button>5</button>
-     <button>6</button>
-     <button class="menos">-</button>
-     <button>1</button>
-     <button>2</button>
-     <button>3</button>
-     <button>+</button>
-     <button class="mas-menos">+/-</button>
-     <button>0</button>
-     <button>.</button>
-     <button>=</button>
-   </div>
- </div>
+   <div class="keyboard-number"> 
+     <button name='operation' id="clearKey" class='itemC'>C</button>
+     <button name='operation'id="eraseKey" class="erase itemErase">⌫</button>
+     <button name='number' class='itemSeven item' id="sevenKey">7</button>
+     <button name='number' class='itemEight item' id="eightKey">8</button> <button name='number' class='itemNine item' id="nineKey">9</button> <button name='operator' class='itemDivision' id="divisionKey">÷</button>
+     <button name='number' class='itemFour item' id="fourKey">4</button>
+     <button name='number' class='itemFive item' id="fiveKey">5</button>
+     <button name='number' class='itemSix item' id="sixKey">6</button>
+     <button name='operator' class='itemMultiply' id="multiplyKey">x</button>
+     <button name='number' class='itemOne item' id="oneKey">1</button>
+     <button name='number' class='itemTwo item' id="twoKey">2</button>
+     <button name='number' class='itemThree item' id="threeKey">3</button>
+     <button name='operator' class='itemMinus' id="minusKey"class="menos">-</button>
+     <button name='number' class='itemZero item' id="zeroKey">0</button>
+     <button name='dot' class='itemDot item' id="dotKey">.</button>
 
+     <button name='operation' class='itemEqual' id="equalKey">=</button> <button name='operator' class='itemPlus' id="plusKey">+</button>
+ </div>
 </body>
+
+<script src="./js/calculadora.js"></script>
 </html>

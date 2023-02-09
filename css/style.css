@@ -2,25 +2,104 @@
   display: grid;
   justify-items: center;
 }
-.result input{
-  display: block; 
+.result{
+  width: 300px;
+  margin-bottom: 20px;
 }
-
-.buttons-container{
+.result input{
+  display: block;
+  width:inherit;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+}
+.resul--result-view{
+   width: 300px;
+   height: 30px;
+}
+.itemC{
+  grid-area: C;
+}
+.itemErase{
+  grid-area: erase;
+}
+.itemSeven{
+  grid-area: seven;
+}
+.itemEight{
+  grid-area: eight;
+}
+.itemNine{
+  grid-area: nine;
+}
+.itemDivision{
+  grid-area: division;
+}
+.itemFour{
+  grid-area: four;
+}
+.itemFive{
+  grid-area: five;
+}
+.itemSix{
+  grid-area: six;
+}
+.itemMultiply{
+  grid-area: multiplication;
+}
+.itemOne{
+  grid-area: one;
+}
+.itemTwo{
+  grid-area: two;
+}
+.itemThree{
+  grid-area: three;
+}
+.itemMinus{
+  grid-area: minus;
+}
+.itemZero{
+  grid-area: zero;
+}
+.itemDot{
+  grid-area: dot;
+}
+.itemEqual{
+  grid-area: equal;
+}
+.itemPlus{
+  grid-area: plus;
+}
+.keyboard-number{
    display:grid;
    width: 300px;
    grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   grid-template-areas: 
+   "C erase . ."
+   "seven eight nine division"
+   "four five six multiplication"
+   "one two three minus"
+   "zero dot equal plus";
 }
-.buttons-container button{
-  width: 80px;
-  height: 80px;
+.keyboard-number button{
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   font-size: 30px;
 }
-.buttons-container .mas-menos{
+.keyboard-number .erase{
+  font-size: 20px;
+  font-weight: bolder;
+}
+.keyboard-number .menos{
   font-size: 20px;
 }
-.buttons-container .menos{
+.keyboard-number .menos{
   font-size: 20px;
 }
+
+
 
