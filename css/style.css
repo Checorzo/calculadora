@@ -9,14 +9,14 @@ overflow-x: hidden;
    margin: 0;
    padding: 0;
    border: 0;
-   font-size: 62.5%;
+   /* font-size: 62.5%; */
 }
 body{
    /* background-color: #333; */
    /* width: 100vw; */
    display: grid;
    justify-content: center;
-   /* overflow-x: hidden; */
+   font-size: 62.5%;
 }
 h1{
    display: block;
@@ -174,5 +174,14 @@ button[name="operator"]:hover{
   color: #fc8983; 
 }
 
-
-
+p{
+   height: 3rem;
+   color: #222;
+   margin-top: 2rem;
+   place-self: center;
+   font-size: 1.6rem;
+}
+p a {
+  text-decoration: none;
+  /* font-size: 2rem; */
+}
