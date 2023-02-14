@@ -74,8 +74,6 @@
                }
             }
            
-
-
             screenOperation.value = screenOperation.value + operator;
 
             console.log(lastValue,operator);
@@ -95,7 +93,13 @@
                if(operationStatue === false)lastValue = parseFloat(screenOperation.value);
                else{
                   newValue = parseFloat(screenOperation.value);
-            }
+               }
+               if(operator){
+                  operatorFlag = true;
+                  numberFlag = true;
+                  counterOperator = 0;
+               }
+
          }
 
          if(t.textContent === '='){
@@ -105,6 +109,7 @@
                screenOperation.value = '';
                operationFlag = true;
                operationStatue = false;
+               dotFlag = false;
             }
          }
          if(d ==='dot' && dotFlag === false){
