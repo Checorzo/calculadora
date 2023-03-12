@@ -103,7 +103,8 @@
          }
 
          if(t.textContent === '='){
-               console.log(lastValue, newValue)
+           if(screenOperation.value != 0){
+               console.log(lastValue, newValue,screenOperation.value)
                calculate(operator);
                printResult(result);
                screenOperation.value = '';
@@ -111,6 +112,7 @@
                operationStatue = false;
                dotFlag = false;
             }
+         }
          }
          if(d ==='dot' && dotFlag === false){
          //   console.log(`dot: ${t.textContent}`);
